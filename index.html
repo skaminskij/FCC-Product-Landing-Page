@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>QuadStore</title>
+</head>
+<body>
+  <div class="container">
+        <div id="header">
+            <div>
+                <img id="header-img" src="images/logo.png" alt="Quadcopter Logo">
+                <a id="header-title" href="index.html">QuadStore</a>
+            </div>
+            <nav id="nav-bar">
+                <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#order">Order</a>
+                <a class="nav-link" href="#contacts">Contacts</a>
+            </nav>
+        </div>
+        <div class="banner"></div>
+        <div id="about">
+          <h1>Welcome to QuadStore!</h1>
+          <p>On this page you can order a quadcopter made from the best parts currently available on the market.</p>
+          <p>RC Quadcopter flying is a new hobby that is getting more and more popular around the world.
+            With First Person View equipment it is the easiest way to experience the feeling of flight.</p>
+          <p>Check out this video below, made by an amazing pilot JohnnyFPV, to see what this hobby is all about.</p>
+          <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/BfO3oUum-hY"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+          </iframe>
+        </div>
+        <div id="order" class="order">
+            <h2>Order Form</h2>
+            <form id="form" action="post">
+              <div class="client-info">
+                <div class="client-item">
+                  <label id="name-label" for="name">Name:</label>
+                  <input type="text" id="name" name="name" placeholder="Your name" required>
+                </div>
+
+                <div class="client-item">
+                  <label id="email-label" for="email">Email:</label>
+                  <input type="email" id="email" name="email" placeholder="Your e-mail" required>
+                </div>
+              </div>
+
+              <div id="frame-list">
+                <p>Frame:</p>
+                <select name="frame-list" id="frame-dropdown">
+                  <option disabled selected value>- Select -</option>
+                  <option value="rc-quadcopter">ImpulseRC Reverb - 76.80$</option>
+                  <option value="rc-plane">Ummagawd Remix - 99.99$</option>
+                  <option value="rc-car">Armattan Chameleon - 90.00$</option>
+                </select>
+              </div>
+
+              <div id="motors-list">
+                <p>Motors:</p>
+                <select name="frame-list" id="motors-dropdown">
+                  <option disabled selected value>- Select -</option>
+                  <option value="rc-quadcopter">Racestar 2205 - 32.99$</option>
+                  <option value="rc-plane">DYS Samguk 2207 - 38.99$</option>
+                  <option value="rc-car">EMAX 2306 - 78.49$</option>
+                </select>
+              </div>
+
+              <div id="camera-list">
+                <p>FPV Camera:</p>
+                <select name="frame-list" id="camera-dropdown">
+                  <option disabled selected value>- Select -</option>
+                  <option value="rc-quadcopter">Runcam Sparrow - 24.99$</option>
+                  <option value="rc-plane">Foxeer HS1177 - 19.90$</option>
+                  <option value="rc-car">Caddx Turbo F2 - 17.99$</option>
+                </select>
+              </div>
+
+              <div id="textarea-group">
+                <p>Your additional comments:</p>
+                <textarea name="textarea" id="textarea" cols="30" rows="10" placeholder="Your comment..."></textarea>
+              </div>
+
+              <input type="submit" value="Submit" id="submit">
+            </form>
+        </div>
+        <div id="contacts" class="footer">
+            <h2>Contacts</h2>
+            <div class="contact-info">
+                <p>
+                    E-mail: temp@temp.com<br>
+                    Tel: Placeholder Number<br>
+                    Fax: Placeholder Number<br>
+                    Address: Random St, Random City, Random Country
+                </p>
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy; 2019 S.K.</p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
